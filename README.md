@@ -19,13 +19,15 @@ No build step, no dependencies, no internet connection required — open the fil
 | 05 | **Applications of Computing** | IoT components and uses, blockchain, cloud computing, speech vs voice recognition, NLP, robotics, AI bias, responsibilities of designers |
 | 06 | **Impacts of Computing** | Digital addiction, internet benefits and harms, spam / spyware / cookies, public and private cloud, security controls, cybercrime law and reporting, cyberbullying, environmental and cultural effects, the digital divide |
 
-**38 topics · 30 tables · 12 hand-drawn SVG diagrams · 18 quick-check questions.** Plus one interactive decimal → binary converter and a closing revision table of twelve facts worth memorising.
+**38 topics · 30 tables · 11 hand-drawn SVG diagrams · 18 quick-check questions.** Three diagrams are interactive, and there is a live decimal → binary converter plus a closing revision table of twelve facts worth memorising.
 
 ## Features
 
+- **A logo and favicon** — an inline SVG mark, so the tab and the page share one identity without a single image request.
 - **Bookmarked header** — jump to any unit (or the revision page) from the sticky header. The current unit and a reading-progress bar update as you scroll, and the active tab scrolls itself into view on narrow screens.
 - **Phone-first layout** — a two-row mobile header with a scrollable unit rail, 40px+ tap targets, 16px body text, tables and diagrams that scroll sideways rather than shrinking into unreadable smudges, and safe-area aware floating controls.
-- **Diagrams, not decoration** — twelve inline SVGs (OS layers, binary-search halving, the counting tree, client–server, the data lifecycle, the IoT loop, a blockchain chain, the digital divide, and more) that each replace a paragraph of text.
+- **Diagrams, not decoration** — eleven inline SVGs (OS layers, the counting tree, client–server, the data lifecycle, the IoT loop, a blockchain chain, the digital divide, and more) that each replace a paragraph of text.
+- **Diagrams you can touch** — tap a layer of the computer stack or a stage of the data life cycle to hear what it does, and step through a live binary search that greys out the half it just discarded.
 - **Collapsible quick checks** — 18 "check yourself" questions with answers hidden behind a tap, so the page stays skimmable.
 - **Light and dark** — follows your choice, remembered in `localStorage`.
 - **Prints cleanly** — header and controls disappear, answers open, page breaks avoid splitting figures and tables.
@@ -66,7 +68,7 @@ Everything else — the PDFs, OCR output, and local tooling — is intentionally
 
 ## Status
 
-Verified structurally: balanced HTML, valid inline SVG, no duplicate IDs, no broken internal anchors, balanced CSS, and parsing inline JavaScript. Not yet cross-checked in every browser; Chrome, Firefox, Safari and Edge are all expected to render it identically since it uses only widely supported CSS.
+Checked in headless Edge at 390px (phone) and 1280px (laptop): no horizontal page overflow, the mobile header rail works, and the interactive diagrams respond to taps and to scripted clicks. Structurally: balanced HTML, valid inline SVG, no duplicate IDs, no broken internal anchors, balanced CSS, and parsing inline JavaScript. Firefox and Safari were not tested, but the page uses only widely supported CSS and JavaScript.
 
 ---
 

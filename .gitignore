@@ -1,6 +1,5 @@
-# Ignore everything in this folder…
+# Ignore every file and folder here…
 *
-!*/
 
 # …except the notes page, the README, and this file itself.
 !.gitignore
